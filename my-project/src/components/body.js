@@ -68,7 +68,7 @@ export default function Body() {
                 <div className="inline ml-12 font-bold text-slate-600">
                   Brake valid till:
                 </div>
-                <div className="inline mr-12">{truck.brake[0]}</div>
+                <div className="inline mr-12">{truck.brake[1]}</div>
               </div>
               <div className="flex justify-center">
                 <div className="flex justify-center mt-4 bg-teal-800 p-3 font-bold text-white w-1/3 rounded-xl">
