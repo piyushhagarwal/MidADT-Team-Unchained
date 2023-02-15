@@ -2,7 +2,6 @@ import React from "react";
 import { db } from "./firebase";
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { Link } from "react-router-dom";
 
 export default function Body() {
   const [trucks, setTrucks] = useState([]);
