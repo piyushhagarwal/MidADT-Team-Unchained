@@ -2,6 +2,7 @@ import React from "react";
 import { db } from "./firebase";
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
+import { Link } from "react-router-dom";
 
 export default function Body() {
   const [trucks, setTrucks] = useState([]);
@@ -13,6 +14,8 @@ export default function Body() {
     };
     getTrucks();
   }, []);
+
+  const url = "https://www.google.co.in/?client=safari&channel=mac_bm";
 
   return (
     <div className="pb-20 grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 w-full mx-4 py-10">
