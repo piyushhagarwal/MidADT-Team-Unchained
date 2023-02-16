@@ -19,6 +19,9 @@ export default function navbar() {
           <b class="navlogo">ASHOK LEYLAND</b>
         </h1>
       </a>
+      <h1 class=" mx-3 d-inline-block align-center mt-2  text-black text-3xl  pr-5">
+        <b class="navlogo">Team Unchained</b>
+      </h1>
     </nav>
   );
 }

@@ -29,10 +29,7 @@ export default function Body() {
         {trucks.map((truck) => {
           return (
             <>
-              <div
-                className="  rounded-2xl p-6 "
-                style={{ "background-color": "#232427" }}
-              >
+              <div className="  rounded-2xl p-6  bg-slate-600">
                 <div className="flex justify-center mb-6">
                   <div className=" font-bold text-slate-50 text-2xl">
                     {truck.number}

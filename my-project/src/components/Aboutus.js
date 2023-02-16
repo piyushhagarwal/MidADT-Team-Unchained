@@ -34,12 +34,12 @@ export default function Aboutus() {
               Seek Help
             </button>
           </Link>
-          <a href="#body">
+          <a href="https://colab.research.google.com/drive/1zGBh7pAQgZSjDObAsq6wSm1MAKmJuhfd">
             <button
               type="button"
               class="btn btn-outline-dark btn-lg py-2 px-2 mx-2"
             >
-              Spare parts Management
+              Inventory Foresight
             </button>
           </a>
           <a href="https://unchained12.netlify.app/">
