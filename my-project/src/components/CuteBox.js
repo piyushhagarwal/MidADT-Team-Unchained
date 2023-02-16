@@ -47,8 +47,11 @@ export default function CuteBox() {
   pusher();
 
   return (
-    <>
-      <div className="pb-10 grid xl:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-10 w-full ml-2">
+    <div class=" mb-7">
+      <h1 class="text-center m-2 text-4xl  mb-7">
+        <u>Live Updates of Maintanance</u>
+      </h1>
+      <div className="pb-3 grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2  w-full mx-6 mt-5">
         {arr.map((event) => {
           return (
             <div className=" p-4 m-2 border-solid border-2 border-slate-600 rounded-2xl hover:text-white hover:bg-black">
@@ -64,13 +67,13 @@ export default function CuteBox() {
           );
         })}
       </div>
-      <div className="flex justify-center">
-        <div className=" mb-10">
-          <button className="p-6 rounded-2xl bg-lime-400 ml-11">
-            Buy these
+      <div className="flex justify-center my-3">
+        <a href="#maps">
+          <button class="btn btn-dark btn-lg py-3 px-4 mx-2">
+            Buy these spare parts
           </button>
-        </div>
+        </a>
       </div>
-    </>
+    </div>
   );
 }

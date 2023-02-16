@@ -17,69 +17,82 @@ export default function Body() {
   const url = "https://www.google.co.in/?client=safari&channel=mac_bm";
 
   return (
-    <div className="pb-20 grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 w-full mx-4 py-10">
-      {trucks.map((truck) => {
-        return (
-          <>
-            <div
-              className="  rounded-2xl p-6 "
-              style={{ "background-color": "#c8f7dc" }}
-            >
-              <div className="flex justify-center mb-6">
-                <div className=" font-bold text-slate-600">{truck.number}</div>
-              </div>
-              <div className="flex justify-center mb-6">
-                <div className=" font-bold text-slate-600">{truck.model}</div>
-              </div>
-              {/* <div>{props.img}</div> */}
-              <div className="flex justify-center">
-                <img
-                  src={truck.imgUrl}
-                  alt=""
-                  width="200"
-                  height="200"
-                  className="rounded-2xl"
-                ></img>
-              </div>
-              <div className="flex justify-between mt-6">
-                <div className="inline ml-12 font-bold text-slate-600">
-                  Tyre purchased on:
+    <div id="body">
+      <h1
+        class="text-center m-2 display-2 "
+        data-aos="zoom-in-down"
+        data-aos-duration="1000"
+      >
+        <b>Owned Vehicles</b>
+      </h1>
+      <div className="pb-20 grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 w-full mx-4 py-10 mt-10">
+        {trucks.map((truck) => {
+          return (
+            <>
+              <div
+                className="  rounded-2xl p-6 "
+                style={{ "background-color": "#232427" }}
+              >
+                <div className="flex justify-center mb-6">
+                  <div className=" font-bold text-slate-50 text-2xl">
+                    {truck.number}
+                  </div>
                 </div>
-                <div className="inline mr-12">{truck.tyre[0]}</div>
-              </div>
-              <div className="flex justify-between mb-4">
-                <div className="inline ml-12 font-bold text-slate-600">
-                  Tyre valid till:
+                <div className="flex justify-center mb-6">
+                  <div className=" font-bold text-slate-50 text-2xl">
+                    {truck.model}
+                  </div>
                 </div>
-                <div className="inline mr-12">{truck.tyre[1]}</div>
-              </div>
-              <div className="flex justify-center">
-                <div className="flex justify-center mb-4 bg-teal-800 p-3 font-bold text-white w-1/3 rounded-xl hover:bg-lime-200 hover:text-lime-800">
-                  <button className="hover:text-lime-800">Buy Tyre</button>
+                {/* <div>{props.img}</div> */}
+                <div className="flex justify-center py-5">
+                  <img
+                    src={truck.imgUrl}
+                    alt=""
+                    width="300"
+                    height="300"
+                    className="rounded-2xl"
+                  ></img>
                 </div>
-              </div>
-              <div className="flex justify-between">
-                <div className="inline ml-12 font-bold text-slate-600">
-                  Brake purchased on:
+                <div className="flex justify-between mt-6">
+                  <div className="inline ml-12 font-bold  text-slate-50">
+                    Tyre purchased on:
+                  </div>
+                  <div className="inline mr-12  text-slate-50 ">
+                    {truck.tyre[0]}
+                  </div>
                 </div>
-                <div className="inline mr-12">{truck.brake[0]}</div>
-              </div>
-              <div className="flex justify-between">
-                <div className="inline ml-12 font-bold text-slate-600">
-                  Brake valid till:
+                <div className="flex justify-between mb-4">
+                  <div className="inline ml-12 font-bold  text-slate-50">
+                    Tyre valid till:
+                  </div>
+                  <div className="inline mr-12 text-slate-50 ">
+                    {truck.tyre[1]}
+                  </div>
                 </div>
-                <div className="inline mr-12">{truck.brake[1]}</div>
-              </div>
-              <div className="flex justify-center">
-                <div className="flex justify-center mt-4 bg-teal-800 p-3 font-bold text-white w-1/3 rounded-xl">
-                  <button>Buy Brake</button>
+
+                <div className="flex justify-between">
+                  <div className="inline ml-12 font-bold  text-slate-50">
+                    Brake purchased on:
+                  </div>
+                  <div className="inline mr-12  text-slate-50 ">
+                    {truck.brake[0]}
+                  </div>
                 </div>
+                <div className="flex justify-between">
+                  <div className="inline ml-12 font-bold  text-slate-50">
+                    Brake valid till:
+                  </div>
+                  <div className="inline mr-12  text-slate-50 ">
+                    {truck.brake[1]}
+                  </div>
+                </div>
+
+                {/* <div className='flex justify-center'></div> */}
               </div>
-              {/* <div className='flex justify-center'></div> */}
-            </div>
-          </>
-        );
-      })}
+            </>
+          );
+        })}
+      </div>
     </div>
   );
 }

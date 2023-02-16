@@ -1,0 +1,9 @@
+.navbar {
+  background-color: rgba(34, 38, 42, 0.8);
+  margin-bottom: 50px;
+  /* opacity: 60%; */
+}
+
+.navlogo {
+  opacity: 100%;
+}
